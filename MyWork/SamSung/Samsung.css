@@ -1,0 +1,54 @@
+.samsung-main-product{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 100px;
+}
+.samsung img{
+    width: 250px;
+    height: 250px;
+}
+.samsung{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.samsung p{ 
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.samsung a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #fe21a2;
+    padding: 5px 20px;
+    border-radius:20px ;
+}
+.samsung a:hover{
+    background-color: rgb(228, 231, 34);
+    color: black;
+}
+.change-page{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+#pagination{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+#pagination button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}

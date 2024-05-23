@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search-add">
+  <h1>Quản lý sản phẩm</h1>
+
+  <!-- Product Information Form -->
+  <form id="product-form" style="display: none;">
+    <h2>Thông tin sản phẩm</h2>
+    <label for="image">Image product:</label>
+    <input type="text" id="image" />
+    <label for="quantity">Quantity:</label>
+    <input type="text" id="quantity" />
+    <label for="fullname">Name:</label>
+    <input type="text" id="fullname" />
+    <label for="description">Description:</label>
+    <input type="text" id="description" />
+    <label for="price">Price:</label>
+    <input type="text" id="price" />
+    <button id="add" onclick="addProduct()">ADD</button>
+    <button id="close" onclick="closeAddProduct()">Đóng</button>
+    <button id="save" style="display: none;" onclick="saveProduct()">SAVE</button>
+  </form>
+
+  <!-- Product List -->
+  <div class="box">
+    <div class="box-header">Danh sách sản phẩm</div>
+    <button onclick="displayAddProduct()">+Thêm sản phẩm</button>
+    <button onclick="sortProduct()">Sắp xếp</button>
+    <input type="search" name="search" id="search" placeholder="Tìm kiếm" onkeyup="handleSearch()">
+    <div class="box-body overflow-scroll">
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Ảnh sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Tên sản phẩm</th>
+            <th>Mô tả</th>
+            <th>Giá</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+    </div>
+</body>
+</html>

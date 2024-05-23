@@ -1,0 +1,149 @@
+#iphone-product-accessory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px;
+    margin-top: 20px;
+}
+.iphone-accessory img {
+    width: 250px;
+    height: 250px;
+}
+.iphone-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.iphone-description p {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.iphone-description h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.iphone-accessory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.iphone-accessory p{
+    color: white;
+}
+.iphone-accessory button {
+    background-color: #fe21a2;
+    border: none;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+.iphone-accessory button:hover {
+    background-color: rgb(228, 231, 34);
+    color: black;
+}
+.samsung-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.samsung-description p {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.samsung-description h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+#samsung-product-accessory{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px;
+    margin-top: 20px;
+}
+.samsung-accessory img {
+    width: 350px;
+    height: 350px;
+}
+.samsung-accessory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.samsung-accessory p{
+    color: white;
+}
+.samsung-accessory button {
+    background-color: #fe21a2;
+    border: none;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+.samsung-accessory button:hover {
+    background-color: rgb(228, 231, 34);
+    color: black;
+}
+.xiaomi-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.xiaomi-description p {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.xiaomi-description h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+#xiaomi-product-accessory{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px;
+    margin-top: 20px;
+}
+.xiaomi-accessory img {
+    width: 250px;
+    height: 250px;
+}
+.xiaomi-accessory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.xiaomi-accessory p{
+    color: white;
+}
+.xiaomi-accessory button {
+    background-color: #fe21a2;
+    border: none;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+.xiaomi-accessory button:hover {
+    background-color: rgb(228, 231, 34);
+    color: black;
+}
+
+

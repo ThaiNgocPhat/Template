@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="../HomePage/HomePage.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #333;">
+    <!-- Header -->
+    <header id="header">
+        <div class="header-logo">
+            <a href="../HomePage/HomePage.html"><p>NgocPhat Store</p></a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="user-shopping-pay">
+            <div class="user-icon">
+                <a href="Login.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="shopping-icon">
+                <a href="GioHang.html"><i class="fa-solid fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <div class="container">
+        <nav class="navigation">
+            <a href="../HomePage/HomePage.html">Trang chủ</a>
+            <a href="../Iphone/Iphone.html">Iphone</a>
+            <a href="../SamSung/Samsung.html">Samsung</a>
+            <a href="../Xiaomi/Xiaomi.html">Xiaomi</a>
+            <a href="../PhuKien/PhuKien.html">Phụ kiện</a>
+        </nav>
+    </div>
+    <!-- Login -->
+    <div class="container">
+        <div class="login">
+            <h1>Đăng nhập</h1>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input 
+                    type="email" 
+                    id="email" 
+                    oninput= "checkEmail()"
+                    placeholder="Nhập email" 
+                    name="email"
+                    class="error-email"
+                    />
+                </div>
+                <p id="errorEmail"></p>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input 
+                    type="password" 
+                    id="password" 
+                    oninput="checkPassword()"
+                    placeholder="Nhập mật khẩu" 
+                    name="pwd"
+                    class="error-password"
+                    >
+                </div>
+                <p id="errorPassword"></p>
+                <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            </form>
+            <p>Bạn chưa có tài khoản? <a href="../Register/Register.html">Đăng ký ngay!
+        </a>
+        </p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="Address">
+            <p>Write by Thai Ngoc Phat</p>
+            <p>Website: <a href="Dienthoaithongminh.com.vn">Dienthoaithongminh.com.vn</a></p>
+            <p>Email: <a href="thaingocphat231@gmail.com">thaingocphat231@gmail.com</a></p>
+            <p>Phone: <a href="0388892447">0388892447</a></p>
+            <p>Address: C2/33G Tan Kien Binh Chanh TpHCM</p>
+            <p>&copy;2024 Cửa hàng được mọi nhà tin dùng</p>
+        </div>
+        <div class="About">
+            <a href="#">Giới thiệu</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Chính sách bảo hành</a>
+            <a href="#">Chính sách đổi trả</a>
+        </div>
+        <div class="Social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+        </div>
+    </footer>
+    <script src="Login.js"></script>
+    
+
+</body>
+
+</html>
+

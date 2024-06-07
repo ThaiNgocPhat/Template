@@ -1,0 +1,59 @@
+1.Vòng đời của component: khởi tạo,cập nhật,phá huỷ
+
+2.Ngăn chặn hành vi mặc định : e.preventDefault();
+
+3.Ưu điểm của react:
+- 1.Tương tác với người dùng nhanh chóng
+- 2.Tối ưu hóa việc render
+- 3.Tối ưu hóa việc lưu trữ dữ liệu
+- 4.Tối ưu hóa việc tương tác với backend
+
+4.chức năng của hàm reder():
+- 1.Khởi tạo giao diện
+- 2.Tương tác với người dùng
+- 3.Tương tác với backend
+- 4.Tương tác với dữ liệu
+
+5.ReactJS là :
+- 1.thư viện javascript
+- 2.thiết kế bởi facebook
+- 3.thiết kế giao diện cho web
+
+6.JSX là :
+- 1.một định dạng của javascript
+- 2.viết theo kiểu XML
+
+7.hoạt động của React: 
+- 1.đầu tiên:chạy một thuật toán "khác biệt(diffing)",xác định những gì thay đổi trong DOM ảo
+- 2.thứ hai:điều chỉnh(reconcilation),nơi nó cập nhật DOM với kết quả của khác biệt
+
+8.Props là đầu vào cho một React Components:là dữ liệu được truyền từ thành phần cha sang thành phần con
+
+9.sự khác nhau giữa state và props:
+- 1.state là dữ liệu được tạo bởi thành phần 
+- 2.props là dữ liệu được truyền từ thành phần cha sang thành phần con
+
+10.hàm setState là hàm bất đồng bộ:React cố tình chờ khi tất cả Component gọi tới hàm setState() trước khi bắt đầu re-render,tăng hiệu suất,tránh việc re-render không cần thiết
+
+11.Sự khác nhau giữa Class component và Function component:
+- 1.Class component là một thành phần có sự kế thừa từ Component
+- 2.Function component là một thành phần không có sự kế thừa từ Component
+
+12.sự khác biệt giữa element và component:
+- 1.element là một đối tượng HTML
+- 2.component là một đối tượng JavaScript
+
+13.sự khác biệt giữa component và props:
+- 1.component là một đối tượng JavaScript
+- 2.props là một đối tượng HTML
+
+14.promise có ba trạng thái:
+- 1.pending:đang chờ
+- 2.fulfilled:đã thành công
+- 3.rejected:đã từ chối
+
+15.sự khác nhau giữa react-router và react-router-dom:
+- 1.react-router là một thư viện cho phép tạo đường dẫn cho trang web
+- 2.react-router-dom là một thư viện cho phép tạo đường dẫn cho trang web và có sự hỗ trợ cho các thành phần như BrowserRouter,Route,Link,...
+
+16.

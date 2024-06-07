@@ -2,28 +2,56 @@ import React from 'react'
 import './App.css'
 
 export default function App() {
+  const [state, setState] = React.useState(0)
   return (
     <div>
-      <div id='details'>
-        <div className='details-img'>
-          <img src="../public/iPhone-15-15-plus_colors_Pink-4.jpg" alt="" />
-        </div>
-        <div className='details-content'>
-            <h1>Iphone 15 Promax Pink</h1>
-            <p>18.990.000 VND</p>
-            <p>Đặc điểm nổi bật của iPhone 15 128GB: <br />
-              Sử dụng kiểu hình notch Dynamic Island  <br />
-              Ra mắt với 5 phiên bản màu sắc và được làm từ kính pha màu <br />
-              Sử dụng Chip A16 Bionic cho hiệu năng vượt trội <br />
-              Trang bị camera chính 48 MP, Telephoto 2x cho khả năng chụp ảnh sắc nét <br />
-              Màn hình OLED Super Retina XDR cho chất lượng đồ họa lý tưởng <br />
-              Hỗ trợ sẵn hệ điều hành iOS 17 mới nhất 2023</p>
-              <button>Thêm vào giỏ hàng</button>
-              <button>Thanh toán</button>
-              <button>Mua trả góp - duyệt hồ sơ trong 3 phút</button>
-              <button>Mua trả góp qua thẻ</button>
-        </div>
-      </div>
+        <button onClick={()=>{
+          setState(state + 1)
+        }}>Tăng</button>
+        <button onClick={() => {
+          if(state > 1){
+            setState (state -1)
+          }else{
+            alert('Không thể giảm')
+          }
+        }}>Giảm</button>
+        <p>{state}</p>
     </div>
   )
+  const [current,setCurrent] = useState(1)
+const limit = 5;
+const indexOfPages = current * limit;
+const indexOfFirst = indexOfPages - limit;
+const currentItems = items.slice(indexOfFirst, indexOfPages);
+
+const pagination = [];
+for (let i =1; i <= Math.ceil(items.length / limit); i++){
+  pagination.push(i)
 }
+return (
+  <>
+  <div className='product'>
+      {currentItems.map((index, item) =>{
+        <div className='abc' key={index}>
+          <div>{item.name}</div>
+          <div>{item.address}</div>
+          <div>{item.phone}</div>
+          <div>{item.email}</div>
+          <div>{item.id}</div>
+          <div>{item.status}</div>
+          <div>{item.createdAt}</div>
+        </div>
+    })}
+    <div className='pagination'>
+      {pagination.map((index)=>{
+        <button key={index} onClick={()=>{
+          setCurrent(index)
+        }}>{index}</button>
+      })}
+    </div>
+  </div>
+  </>
+)
+
+}
+

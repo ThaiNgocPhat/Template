@@ -1,35 +1,25 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Collections;
+import java.util.Scanner;
+import java.util.Stack;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        List<Integer> list1 = new ArrayList<>();
-        Random random = new Random();
-        for(int i = 0; i < 10; i++){
-            list1.add(random.nextInt(100));
+        //tạo Stack để lưu trữ
+        Stack<String> stack = new Stack<>();
+        //cho nhập số lượng từ từ bàn phím
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhập số lượng tù cần nhập: ");
+        int numOfWords = Integer.parseInt(sc.nextLine());
+
+        //tạo vòng for với số lần lặp bằng tổng số từ nhập
+        for(int i = 0; i < numOfWords; i++){
+            System.out.print("Nhập từ thứ" + " " +(i + 1) + ":"  + " ");
+            String word = sc.nextLine();
+            stack.push(word);
         }
-        System.out.println("List ngẫu nhiên: " + list1);
-
-        int maxElement = Collections.max(list1);
-        System.out.println("Giá trị lớn nhất trong list là: " + maxElement);
-
-        Collections.reverse(list1);
-        System.out.println("List sau khi đảo ngược: " +list1);
-
-        Collections.sort(list1);
-        System.out.println("List sau khi sắp xếp: " + list1);
-
-        List<Integer> list2 = new ArrayList<>();
-        for(int i = 0; i < 10; i++){
-            list2.add(random.nextInt(100));
+        //tạo vòng lặp in ra với ohuowng thức pop()
+        System.out.println("Thứ tự đảo ngược là: ");
+        while(!stack.isEmpty()){
+            System.out.print(stack.pop());
         }
-        System.out.println("List ngẫu nhiên 2: " + list2);
-
-        list1.addAll(list2);
-        System.out.println("List sau khi thêm list1 và list2: " + list2);
-
-        
     }
 }

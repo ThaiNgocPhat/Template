@@ -1,10 +1,10 @@
 import React from 'react'
-import './App.css'
+import Header from '../src/layout/Header/Header'
+
 export default function App() {
   return (
     <>
-      //làm phần sort
-      
+      <Header/>
     </>
   )
 }

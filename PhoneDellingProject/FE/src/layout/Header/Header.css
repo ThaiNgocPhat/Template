@@ -1,0 +1,23 @@
+body{
+    background-color: #333;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.header-logo img{
+    width: 200px;   
+}
+.header-cart-icon icon{
+    color: black;
+    font-size: 25px;
+}
+.info-delivery p{
+    color: black;
+}
+.header-cart{
+    background-color: black;
+}

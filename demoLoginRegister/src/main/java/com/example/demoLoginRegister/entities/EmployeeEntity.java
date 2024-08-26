@@ -5,23 +5,22 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @Entity
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "employees")
 public class EmployeeEntity {
     @Id
-    @Column(name = "employeeId", length = 45)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "employee_id", length = 45)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long employeeId;
 
-    @Column(name = "employeeName", length = 255)
     private String employeeName;
 
     @Column(name = "email", length = 255)
     private String email;
 
-    @Column(name = "password", length = 45)
+    @Column(name = "password", length = 255)
     private String password;
 }

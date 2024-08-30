@@ -7,6 +7,7 @@ import PaymentRouter from './payment/PaymentRouter.js'
 import AuthRouter from './sendMail/routers/authRegister.js'
 import OrderRouter from './sendMail/routers/orderRouter.js'
 import LoginRouter from './sendMail/routers/loginRouter.js'
+import UserRouter from './sendMail/routers/UserRouter.js'
 
 const app = express();
 app.use(bodyParser.json());
@@ -26,6 +27,7 @@ app.use('/api', PaymentRouter);
 app.use('/api/auth', AuthRouter);
 app.use('/api/order', OrderRouter);
 app.use('/api/login', LoginRouter);
+app.use('/api/user', UserRouter);
 app.get('/products', async (req, res) => {
     try {
         const products = await Product.findAll();
@@ -37,7 +39,7 @@ app.get('/products', async (req, res) => {
 
 sequelize.sync().then(() => {
     console.log('Database connected');
-    const PORT = 8700;
+    const PORT = 8800;
     app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);
     });
